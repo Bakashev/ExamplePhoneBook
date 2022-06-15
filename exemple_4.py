@@ -23,3 +23,19 @@ print(square)
 
 squareTwo=[val**2 for val in range(1,11)]
 print(squareTwo)
+
+players=['charles','martina','eli','michel','florence']
+print(players[0:2])
+print(players[:-1])
+print(players[-3:])
+
+for player in players[-3:]:
+    print(player.title())
+
+my_food=['pizza','falafel','carrot cake']
+friend_food=my_food[:]
+print(my_food)
+print(friend_food)
+my_food.append('tomato')
+friend_food.append('potato')
+print(my_food,friend_food)
