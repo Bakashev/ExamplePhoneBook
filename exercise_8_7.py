@@ -1,3 +1,4 @@
+import print_models,show_comleted_models
 def make_album(name_singer,name_album, acount_treck=''):
     info={'name' : name_singer, 'album':name_album}
     if acount_treck:
@@ -21,6 +22,6 @@ while True:
 
 unprinted_design = [1,'fire','Non']
 completed_design=[]
-import print_models,show_comleted_models
+
 print_models.print_models(unprinted_design,completed_design)
 show_comleted_models.show_completed_models(completed_design)
