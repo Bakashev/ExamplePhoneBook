@@ -22,3 +22,11 @@ for key, value in favorite_language.items():
         print(key, 'favorite languages: ')
         for languge in value:
             print('',languge)
+
+def make_pizza(*topping):
+    print('Making a pizza with a folowing topping')
+    for topping in topping:
+        print (' - ' + topping)
+
+make_pizza('pepperoni')
+make_pizza('mashrooms', 'green peppers')
