@@ -1,4 +1,4 @@
-import dog, car
+import dog, car, electric_car
 
 my_dog=dog.Dog('carry',3)
 my_dog.sit()
@@ -18,3 +18,15 @@ my_car.new_value_odometr(24)
 print(my_car.read_odometr())
 my_car.post_odometr(45)
 print(my_car.read_odometr())
+
+# create electric car descendant
+my_electic_car = electric_car.Electic('tesla', ' model s', 2010, 83)
+print(my_electic_car.get_describe_name())
+print(my_electic_car.odometr_reading)
+my_electic_car.describe_bettery()
+my_electic_car.fill_gas_tank()
+my_car.fill_gas_tank()
+my_electic_car.battery_sizy.print_betery_size()
+
+my_electic_car.battery_sizy.print_betery_size()
+my_electic_car.battery_sizy.get_range()

@@ -26,3 +26,7 @@ class Car ():
             print('This operation is fail')
         else:
             self.odometr_reading=milies
+
+    def fill_gas_tank(self):
+        """How many gas need """
+        print("You need 40 gal")
