@@ -12,3 +12,8 @@ class Batterry():
             self.range = 270
         message = 'This car can run {} milies on full carge'.format(self.range)
         print(message)
+
+    def update_battery_size(self):
+        print(self.battery_size)
+        if self.battery_size != 85:
+            self.battery_size=85

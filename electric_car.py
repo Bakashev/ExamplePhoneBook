@@ -7,7 +7,7 @@ class Electic (car.Car):
 
     def describe_bettery (self):
         """print information with battery"""
-        print(" {2} {1} has battery {0} kw".format(self.battery_sizy, self.model, self.make.title()))
+        print(" {2} {1} has battery {0} kw".format(self.battery_sizy.battery_size, self.model, self.make.title()))
 
     def fill_gas_tank (self):
         print("Electrocar not need gas")

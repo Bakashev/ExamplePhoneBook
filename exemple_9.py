@@ -30,3 +30,11 @@ my_electic_car.battery_sizy.print_betery_size()
 
 my_electic_car.battery_sizy.print_betery_size()
 my_electic_car.battery_sizy.get_range()
+
+my_el_car=electric_car.Electic('tesla', 'model b', 2020)
+my_el_car.describe_bettery()
+print()
+my_el_car.battery_sizy.get_range()
+print()
+my_el_car.battery_sizy.update_battery_size()
+my_el_car.battery_sizy.get_range()
