@@ -3,6 +3,7 @@ class User ():
         self.other_info = {}
         self.name = first_name
         self.surname = last_name
+        self.login_attempts = 0
         for key, value in other_info.items():
             self.other_info[key] = value
 
@@ -16,3 +17,13 @@ class User ():
 
     def great_user (self):
         print ('We are glad to see you {}'.format(self.name.title()))
+
+    def incremen_login_attempts(self):
+        """incremen one for login_attempts"""
+        self.login_attempts += 1
+
+    def reset_login_attempts(self):
+        """refuse login_attempts"""
+        self.login_attempts=0
+
+

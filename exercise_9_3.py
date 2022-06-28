@@ -8,3 +8,13 @@ user_two.great_user()
 user_two.describe_user()
 user_three.great_user()
 user_three.describe_user()
+
+# exercise 9-5
+print('Crate new user and new attribute')
+user_four = us.User('ivan','ivanov')
+print(user_four.login_attempts)
+for i in range(55):
+    user_four.incremen_login_attempts()
+print('New value attribute login_attemots : {}'.format(user_four.login_attempts))
+user_four.reset_login_attempts()
+print(user_four.login_attempts)
