@@ -12,3 +12,12 @@ res_one.describe_restaurant()
 res_two.describe_restaurant()
 re_three.describe_restaurant()
 
+# exercise 9-4
+"Create instanse and update attribute number_served"
+res_four = r.Restaurant('dominas','pizza')
+res_four.describe_restaurant()
+print(res_four.number_served)
+res_four.number_served=4
+print(res_four.number_served)
+res_four.increment_number_served(60)
+print(res_four.number_served)
