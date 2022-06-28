@@ -1,0 +1,10 @@
+import user_9_3 as us
+user_one = us.User('sergey','bakashev',age=36,children=2,education='higher')
+user_two = us.User('alina', 'bakasheva', age=6, national = 'belarus')
+user_three = us.User('darya', 'bakasheva', age=4)
+user_one.great_user()
+user_one.describe_user()
+user_two.great_user()
+user_two.describe_user()
+user_three.great_user()
+user_three.describe_user()
