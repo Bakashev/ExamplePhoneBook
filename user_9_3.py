@@ -26,18 +26,7 @@ class User ():
         """refuse login_attempts"""
         self.login_attempts=0
 
-class Privileges ():
-    def __init__(self):
-        self.privileges =['- create new user', '- delete othere user', '- update users']
 
-    def show_access_rights (self):
-        #print('user {} {} can :'.format(self.name.title() , self.surname.title()))
-        print("user can")
-        for i in self.privileges:
-            print(i)
 
-class Admin (User):
-    def __init__(self,first_name,last_name,**other_info):
-        super().__init__(first_name,last_name,**other_info)
-        self.privileges = Privileges()
+
 
