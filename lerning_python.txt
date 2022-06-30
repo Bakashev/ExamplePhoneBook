@@ -1,0 +1,4 @@
+In Python yo can create class
+In Python yo can crete object class
+In Python yo can read file
+In Python yo can write file
