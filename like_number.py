@@ -26,3 +26,8 @@ def print_number():
     else:
         return favoritenumber
 def like_number():
+    favoritenumber=print_number()
+    if favoritenumber:
+        print ('Your favorite numer is {}'.format(favoritenumber))
+    else:
+        get_new_number()
