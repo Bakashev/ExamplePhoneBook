@@ -1,6 +1,12 @@
 import json
-name = input('Enter you name: ')
 fielname = 'user_info.json'
-numbers=[3,4,5,6,]
-with open(fielname,'w') as f_obj:
-    json.dump(name,f_obj)
+try:
+    with open(fielname) as f_obj:
+        username = json.load(f_obj)
+        print('Well come back {}'.format(username))
+except FileNotFoundError:
+    with open(fielname,'w') as f_obj:
+        name = input('Enter you name: ')
+        json.dump(name,f_obj)
+
+
