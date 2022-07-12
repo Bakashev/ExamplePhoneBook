@@ -17,5 +17,12 @@ def get_new_number():
     with open(fielname,'w') as f_obj:
         json.dump(number,f_obj)
 def print_number():
-    """Open file a"""
+    """Open file and write value"""
+    try:
+        with open(fielname) as f_obj:
+            favoritenumber=json.load(f_obj)
+    except FileNotFoundError:
+        return None
+    else:
+        return favoritenumber
 def like_number():
