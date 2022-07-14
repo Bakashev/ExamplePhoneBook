@@ -21,7 +21,12 @@ def greet_user ():
     """Use save user if file not found we will create new file and write user name"""
     fielname = 'user_info.json'
     username= get_stored_username()
-    if username:
-        print('Well come back {}'.format(username))
-    else:
+    print("Hello dear friends \n It's your name {} \n ".format(username))
+    answer=input("Press y or n")
+    if answer == 'y':
+        if username:
+            print('Well come back {}'.format(username))
+        else:
+            get_new_username()
+    if answer == 'n':
         get_new_username()
